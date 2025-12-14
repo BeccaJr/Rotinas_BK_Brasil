@@ -98,8 +98,9 @@ A aplicação possui uma interface simples e orientada à execução do processo
 ## 🚀 Como Executar
 
 1. Clone o repositório:
-```bash
-```git clone https://github.com/BeccaJr/Rotinas_BK_Brasil.git```
+    ```bash
+    git clone https://github.com/BeccaJr/Rotinas_BK_Brasil.git
+    ```
 
 2. Abra a solução no Visual Studio
 
