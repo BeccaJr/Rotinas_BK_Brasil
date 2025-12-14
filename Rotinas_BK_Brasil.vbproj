@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{66A6F0D8-D23B-4979-9F32-36DB2547A9F4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Rotinas_BK_Brasil.My.MyApplication</StartupObject>
+    <RootNamespace>Rotinas_BK_Brasil</RootNamespace>
+    <AssemblyName>Rotinas_BK_Brasil</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\BeccaJr\Desktop\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>Rotinas Automáticas Burger King Brasil</ProductName>
+    <PublisherName>Becca</PublisherName>
+    <SuiteName>RotinasBKB</SuiteName>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Rotinas_BK_Brasil.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Rotinas_BK_Brasil.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo-BK.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>540362AED384D0D39B52CCA14CB82BDCFE657776</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Rotinas_BK_Brasil_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Arquivos.vb" />
+    <Compile Include="CmvPlk.Designer.vb">
+      <DependentUpon>CmvPlk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CmvPlk.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Desenvolvedor.Designer.vb">
+      <DependentUpon>Desenvolvedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Desenvolvedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataPOpsBKB.Designer.vb">
+      <DependentUpon>DataPOpsBKB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DataPOpsBKB.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mensagem.Designer.vb">
+      <DependentUpon>Mensagem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mensagem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LaborPlk.Designer.vb">
+      <DependentUpon>LaborPlk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LaborPlk.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_Loading.Designer.vb">
+      <DependentUpon>form_Loading.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form_Loading.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_LogModificacoes.Designer.vb">
+      <DependentUpon>form_LogModificacoes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form_LogModificacoes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POpFz.Designer.vb">
+      <DependentUpon>POpFz.vb</DependentUpon>
+    </Compile>
+    <Compile Include="POpFz.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.vb">
+      <DependentUpon>MainMenu.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="POpBkb.Designer.vb">
+      <DependentUpon>POpBkb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="POpBkb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POpPlk.Designer.vb">
+      <DependentUpon>POpPlk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="POpPlk.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Processos.vb" />
+    <Compile Include="Snippets.vb" />
+    <Compile Include="VariaveisGlobais.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CmvPlk.resx">
+      <DependentUpon>CmvPlk.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Desenvolvedor.resx">
+      <DependentUpon>Desenvolvedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataPOpsBKB.resx">
+      <DependentUpon>DataPOpsBKB.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_Loading.resx">
+      <DependentUpon>form_Loading.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_LogModificacoes.resx">
+      <DependentUpon>form_LogModificacoes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mensagem.resx">
+      <DependentUpon>Mensagem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LaborPlk.resx">
+      <DependentUpon>LaborPlk.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POpBkb.resx">
+      <DependentUpon>POpBkb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POpFz.resx">
+      <DependentUpon>POpFz.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POpPlk.resx">
+      <DependentUpon>POpPlk.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="Rotinas_BK_Brasil_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="logo-BK.ico" />
+    <None Include="Resources\Erro.png" />
+    <None Include="Resources\Alerta.png" />
+    <None Include="Resources\bkLoading11.gif" />
+    <None Include="Resources\bkLoading1.gif" />
+    <None Include="Resources\BK-novo-logo-eggwhite.png" />
+    <None Include="Resources\home.png" />
+    <None Include="Resources\PLK Branco.png" />
+    <None Include="Resources\relatorio.png" />
+    <None Include="Resources\desenvolvedor.png" />
+    <None Include="Resources\minimizar1.png" />
+    <None Include="Resources\fechar.png" />
+    <None Include="Resources\PLK.png" />
+    <None Include="Resources\BK.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 e x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
